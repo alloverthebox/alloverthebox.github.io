@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""/>
+    <title>Rachel and the box</title>
+  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <script type="text/javascript" src="./assets/miweb.js"></script>
+</head>
+
+<body>
+
+  <header>
+
+    <div class="container-fluid p-3  bg-dark text-white">
+      <h1 class="text-center">All over the box</h1>
+     
+    </div>
+   <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="the_box.html">The box</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="about.html">Conóceme un poco más</a>
+      </li>
+    </ul>
+   </nav>
+  </header>
+  <section class="container my-5">
+    <h2 class="text-center">LA CAJA</h2>
+    <p class="mt-5">Casi todos conocemos la típica expresión de pensar fuera de la caja. Está asociada en origen con la resolución de un problema de lógica en el que hay que conectar 9 puntos  con cuatro lineas verticales sin levantar el lápiz del papel y sin pasar dos veces por el mismo punto. Para resolverlo hay que dejar de ver los nueve puntos como una caja y verlos "desde fuera". Hoy en día se sigue utilizando esta expesión como una forma de decir que hay que ser innovador y creativo y salir fuera de la caja para buscar la solución desde otro punto de vista. Pero.... ¿y si la solución está en la caja? Quizás no sea muy buena idea salir en este caso. Tal vez esté debajo y solo puedas verla si la levantas. Puede ser que no puedas levantarla y mirar a la vez y tengas que pedir ayuda. O igual tienes que subirte encima. O rodearla.... Las posibilidades son muchas y muy variadas. Para mi tiene mucho más sentido contemplar la caja desde todos los ángulos, no dar nada por hecho, y entender que cada problema que se presente puede tener diferentes soluciones e intentar buscar la que más se ajuste en cada momento. Ser flexible, resilente, no darte por vencido... En definitiva, be water my friend, and think all over the box. </p>
+  </section>
+  <section class="container" >
+    
+       <!--imágenes cortesía de pexels--> 
+      <div class="row ">
+        <div class="col-lg-4"><img class="m-1 rounded" src="./assets/imagenes/box/project.jpg" alt="empezando proyecto"></div>
+        <div class="col-lg-4"><img class="m-1 rounded" src="./assets/imagenes/box/carrying.jpg" alt="sosteniendo cajas"></div>
+        <div class="col-lg-4"><img class="m-1 rounded" src="./assets/imagenes/box/team.jpg" alt="trabajando rodeados de cajas"></div>
+        
+      </div>  
+
+      <div class="row">
+        <div class="col-lg-4"><img class="m-1 rounded" src="./assets/imagenes/box/behind.jpg" alt="buscando detrás de unas cajas"></div>
+        <div class="col-lg-4"><img class="m-1 rounded"src="./assets/imagenes/box/feet.jpg" alt="persona en caja con los pies fuera"></div>
+        <div class="col-lg-4"><img class="m-1 rounded" src="./assets/imagenes/box/hole.jpg" alt="chica en una caja con agujero para la cara"></div>
+        
+      </div>
+     
+      <div class="row">
+       <div class="col-lg-4"><img class="m-1 rounded" src="./assets/imagenes/box/under.jpg" alt="persona sepultada por cajas"></div>
+       <div class="col-lg-4"><img class="m-1 rounded"src="./assets/imagenes/box/high5.jpg" alt="pareja chocando las cinco"></div>
+       <div class="col-lg-4"><img class="m-1 rounded"src="./assets/imagenes/box/looking.jpg" alt=" dos hombres mirando dentro de una caja"></div>
+      </div>
+
+  </section>
+   
+  <footer >
+    <div class="container-fluid mb-0 mt-5  py-5 bg-dark text-white" >
+        <div class="float-left mr-5">
+          <p><a class="text-white" href="https://linkedin.com/in/raquel-patiño-rodriguez-7460aa248"><i class='fab fa-linkedin' style='font-size:26px'></i></a></p>
+          <p ><i class="far fa-envelope-open" style='font-size:24px'></i><a class="text-white" href="mailto:alloverthebox@outlook.es"> alloverthebox@outlook.es</a></p>
+       </div>
+       <div id="map" class="container-sm" style="height: 280px; "></div>
+    </div>
+  </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+<script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""></script>
+</body>
+</html>

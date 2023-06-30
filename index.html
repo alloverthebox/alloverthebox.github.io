@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!--añadimos los enlaces de estilo a las librerías que vamos a utilizar --> 
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""/>
+    <title>All over the box</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+   <!--subimos un nivel en el directorio para acceder a los archivos que están dentro de assets--> 
+    <script type="text/javascript" src="./assets/miweb.js" ></script>
+ </head>
+
+ <body>
+  <header>
+
+    <div class="container-fluid p-3  bg-dark text-white">
+      <h1 class="text-center">All over the box</h1>
+    </div>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+     <ul class="navbar-nav">
+       <li class="nav-item active">
+          <a class="nav-link" href="the_box.html">The box</a>
+       </li>
+       <li class="nav-item active">
+         <a class="nav-link" href="about.html">Conóceme un poco más</a>
+       </li>
+     </ul>
+    </nav>
+  </header>
+  <h2 class="text-center mt-4">BIENVENID@ </h2>
+  <div class="container my-5">
+    <p>Gracias por visitar mi página. Mi nombre es Raquel y soy (casi) Técnico Superior en Desarrollo de Aplicaciones Web. Actualmente busco una empresa donde realizar la Formación en Centros de Tabajo. All over the box nace como una carta de presentación al exterior, ya que al terminar el curso no le veía mucho sentido a contactar a una empresa y no tener nada más que mostrarle que mi currículum. Si has llegado hasta aquí, probablemente yo misma te haya contactado previamente. Te invito a que visites las secciones <b> The box</b>, donde explico el porqué de la caja y <b>Conóceme un poco más</b>, donde prodrás ver mi historia personal y cómo he acabado en el mundo de la programación.</p>
+  </div>
+  <section>
+    <div class="card-deck  mx-5 " >
+     <div class="card shadow" style="width: 10 rem;">
+        <img src="./assets/imagenes/vive.jpg" class="card-img-top" alt="café en bosque">
+        <div class="card-body text-center">
+          <h5 class="card-title">VIVE</h5>
+          <p class="card-text">La felicidad de las pequeñas cosas</p>
+        </div>
+     </div>
+
+      <div class="card shadow" style="width: 10 rem;">
+        <img src="./assets/imagenes/desk.jpg" class="card-img-top img-fuid" alt="escritorio con portatil y planta">
+        <div class="card-body text-center" >
+          <h5 class="card-title">SUEÑA</h5>
+          <p class="card-text">Encuentra lo que te apasiona y ve a por ello</p>
+        </div>
+      </div>
+      <div class="card shadow" style="width: 10 rem;">
+        <img src="./assets/imagenes/pareja.jpg" class="card-img-top  " alt="pareja saltando al atardecer">
+        <div class="card-body text-center">
+          <h5 class="card-title">DISFRUTA</h5>
+          <p class="card-text">Siempre hay tiempo para desconectar</p>
+              
+        </div>
+      </div>
+      
+      <div class="card shadow" style="width: 10 rem;">
+        <img src="./assets/imagenes/rubik.jpg" class="card-img-top" alt="...">
+        <div class="card-body text-center">
+          <h5 class="card-title">TRANSFORMA</h5>
+          <p class="card-text">Acepta el cambio como parte del proceso</p>
+             
+        </div>
+      </div>
+    </div>
+ </section>
+ <footer>
+   <div class="container-fluid mb-0 mt-5  py-5 bg-dark text-white" >
+     <div class="float-left mr-5">
+       <p><a class="text-white" href="https://linkedin.com/in/raquel-patiño-rodriguez-7460aa248"><i class='fab fa-linkedin' style='font-size:26px'></i></a></p>
+       <p ><i class="far fa-envelope-open" style='font-size:24px'></i><a class="text-white" href="mailto:alloverthebox@outlook.es"> alloverthebox@outlook.es</a></p>
+     </div>
+      <!--div vacío para añadir el mapa que estará creado en miweb.js--> 
+     <div id="map" class="container-sm" style="height: 280px; "></div>
+   </div>
+  </footer>
+
+    <!--añadimos los scripts necesarios de nuestras liberías-->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+   
+   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""></script>
+ </body>
+</html>
